@@ -28,7 +28,7 @@ const LoginForm = () => {
       setMessage("Login successful");
       localStorage.setItem("isLoggedIn", "true"); // Set login status in local storage
       setIsLoggedIn(true);
-      router.push("/admin/dashboard");
+      router.push("/admin");
     } else {
       if (email !== adminEmail) {
         setMessage("Invalid email address");
